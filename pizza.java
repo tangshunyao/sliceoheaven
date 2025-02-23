@@ -45,5 +45,4 @@ public class pizza {
         system.out.printin("pizza sides:"  + pizzaSide);
         system.out.printin("drinks:"  + drinks);
     }
-    
 }
