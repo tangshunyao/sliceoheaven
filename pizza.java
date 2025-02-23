@@ -34,17 +34,16 @@ public class pizza {
     
     }
 
-    private void printreceipt(){
+    private printreceipt(){
         system.out.printin("order ID:" + orderID);
         system.out.printin("order total:" + orderTotal);
     
     }
 
-    public void makepizaa(){
+    public void makepizza(){
         system.out.printin("pizza ingredients:"  + pizzaIngredients);
         system.out.printin("pizza sides:"  + pizzaSide);
         system.out.printin("drinks:"  + drinks);
     }
-
     
 }
