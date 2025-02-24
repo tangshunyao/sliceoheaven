@@ -2,7 +2,7 @@ public class pizza {
     public String storeAddress;
     public String storeName;
 
-    private String storeMenu;
+    public String Menu;
 
     public long storePhone;
     public String storEemali;
@@ -14,10 +14,14 @@ public class pizza {
     private String orderID;
     private double orderTotal;
 
-    public void takeorder(String id, double total){
+    public void takeOrder(String id, String ingredients, String sides, String drink, String price, double total){
         orderID = id;
+        pizzaIngredients = ingredients;
+        pizzaSide = sides;
+        drinks = drink;
+        pizzaPrice = price;
         orderTotal = total;
-
+        
         System.out.println("order accepted!");
 
         System.out.println("order is being prepared");
@@ -35,12 +39,14 @@ public class pizza {
     }
 
     private void printreceipt(){
+        System.out.println("********RECEIPT********");
+
         System.out.println("order ID:" + orderID);
         System.out.println("order total:" + orderTotal);
     
     }
 
-    public void makepizaa(){
+    public void makepizza(){
         System.out.println("pizza ingredients:"  + pizzaIngredients);
         System.out.println("pizza sides:"  + pizzaSide);
         System.out.println("drinks:"  + drinks);
