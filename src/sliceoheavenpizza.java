@@ -76,6 +76,9 @@ public class sliceoheavenpizza {
             System.out.println("********RECEIPT********");
     
             System.out.println("order ID:" + orderID);
+            System.out.println("pizza ingredients:"  + pizzaIngredients);
+            System.out.println("pizza sides:"  + pizzaSide);
+            System.out.println("drinks:"  + drinks);
             System.out.println("order total:" + orderTotal);
         
         }
