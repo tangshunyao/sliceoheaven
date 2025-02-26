@@ -47,7 +47,31 @@ public class sliceoheavenpizza {
             printreceipt();
         
         }
-    
+
+        public void setOrderID(String orderID){
+            this.orderID = orderID;
+        }
+
+        public String getOrderID(){
+            return orderID;
+        }
+
+        public void setpizzaIngredients(String pizzaIngredients){
+            this.pizzaIngredients = pizzaIngredients;
+        }
+
+        public String getpizzaIngredients(){
+            return pizzaIngredients;
+        }
+
+        public void setOrderTotal(double orderTotal){
+            this.orderTotal = orderTotal;
+        }
+
+        public double getOrdetTotal(){
+            return orderTotal;
+        }
+
         private void printreceipt(){
             System.out.println("********RECEIPT********");
     
