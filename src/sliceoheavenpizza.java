@@ -88,6 +88,31 @@ public class sliceoheavenpizza {
             System.out.println("pizza sides:"  + pizzaSide);
             System.out.println("drinks:"  + drinks);
         } 
-    
+
+        private static final String blackListNumber = "12345678909876";
+
+        public void processCardPayment(String cardNumber, String expiryDate, int cvv){
+            int cardLength = cardNumber.length();
+            if(cardLength == 14){
+                System.out.println("Card acepted");
+            }else{
+                System.out.println("Invalid card");
+            }
+
+            if(cardNumber.equals(blackListNumber)){
+                System.out.println("card is blacklisted,pleace use another card.");
+            }
+
+            int firstCardDigit = Integer.parseInt(cardNumber.substring(0,1));
+            
+            int lastFourDigits = Integer.parseInt(cardNumber.substring(cardLength - 4));
+
+            String cardNumberToDisplay = cardNumber.charAt(0) + "*".repeat(cardLength - 5) + cardNumber.substring(cardLength - 4);
+        
+            System.out.println("first card digit:" + firstCardDigit);
+            System.out.println("last four digits:" + lastFourDigits);
+            System.out.println("card number to display:" + cardNumberToDisplay);
+        }
+
     }
     
