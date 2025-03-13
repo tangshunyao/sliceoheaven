@@ -5,6 +5,5 @@ public class App {
           pizza1.isItYourBirthday();
           pizza1.makeCarPayment();
           pizza1.processCardPayment(0, null, null);
-        
         }
 }  
